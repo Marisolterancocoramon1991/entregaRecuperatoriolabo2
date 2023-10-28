@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Primer Parcial Labo Tres</title>
+</head>
+<body>
+    <div style="display: block;" id="form-datos">
+        <h1>Form Datos</h1>
+        <label>Filtrar por:</label>
+        <select id="filtro">
+            <option value="Persona">Persona</option>
+            <option value="Heroe">Heroe</option>
+            <option value="Villano">Villano</option>
+        </select>
+        <br>
+        <label for="calcular-promedio-edad">Calcular Edad Promedio</label>
+        <input type="text" id="promedio-edad-input" disabled>
+        <button id="btn-calcular-promedio-edad">Calcular</button>
+        <br>
+        <h3>Mostrar Columnas:</h3>
+        <br>
+        <div class="mostrar-columnas">
+            <label for="col-id">Id</label>
+            <input type="checkbox" id="col-id" checked>
+            <label for="col-nombre">Nombre</label>
+            <input type="checkbox" id="col-nombre" checked>
+            <label for="col-apellido">Apellido</label>
+            <input type="checkbox" id="col-apellido" checked>
+            <label for="col-edad">Edad</label>
+            <input type="checkbox" id="col-edad" checked>
+            <label for="col-AlterEgo">AlterEgo</label>
+            <input type="checkbox" id="col-AlterEgo" checked>
+            <label for="col-ciudad">Ciudad</label>
+            <input type="checkbox" id="col-ciudad" checked>
+            <label for="col-publicado">Publicado</label>
+            <input type="checkbox" id="col-publicado" checked>
+            <label for="col-enemigo">Enemigo</label>
+            <input type="checkbox" id="col-enemigo" checked>
+            <label for="col-robos">Robos</label>
+            <input type="checkbox" id="col-robos" checked>
+            <label for="col-asesinos">Asesinos</label>
+            <input type="checkbox" id="col-asesinos" checked>
+        </div>
+        <br>
+        <h3>Mi Tabla de Datos</h3>
+        <table id="tabla-datos">
+            <thead>
+              <tr>
+                <th id="id-header">Id</th>
+                <th id="nombre-header">Nombre</th>
+                <th id="apellido-header">Apellido</th>
+                <th id="edad-header">Edad</th>
+                <th id="AlterEgo-header">AlterEgo</th>
+                <th id="ciudad-header">Ciudad</th>
+                <th id="publicado-header">Publicado</th>
+                <th id="enemigo-header">Enemigo</th>
+                <th id="robos-header">Robos</th>
+                <th id="asesinos-header">Asesinos</th>
+              </tr>
+            </thead>
+            <tbody id="tabla-datos"></tbody>
+        </table>
+        <br>
+        <button id="boton-agregar">Agregar</button>
+    </div>
+
+    <br><br>
+    <!-- ... Tu otro contenido HTML ... -->
+
+<div style="display: none;" id="form-abm">
+    <h2>Formulario ABM</h2>
+    <label for="id">Id:</label>
+    <input type="text" id="id" disabled="true" /><br>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" /><br>
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" /><br>
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" /><br>
+    <label for="alterEgo">Alter Ego:</label>
+    <input type="text" id="alterEgo" /><br>
+    <label for="ciudad">Ciudad:</label>
+    <input type="text" id="ciudad" /><br>
+    <label for="publicado">Publicado:</label>
+    <input type="text" id="publicado" /><br>
+    <label for="enemigo">Enemigo:</label>
+    <input type="text" id="enemigo" /><br>
+    <label for="tipo">Tipo</label>
+    <select id="tipo">
+        <option>Heroe</option>
+        <option>Villano</option>
+    </select>
+    <label for="robos">Robos:</label>
+    <input type="number" id="robos" /><br>
+    <label for="asesinos">Asesinos:</label>
+    <input type="number" id="asesinos" /><br>
+    <button id="aceptar">Aceptar</button>
+    <button id="cancelar">Cancelar</button>
+    <button id="eliminar">Eliminar</button>
+    <button id="insertar">Insertar</button>
+</div>
+
+<!-- ... Tu otro contenido HTML ... -->
+
+
+    <script type="module" src="./js/script.js"></script>
+</body>
+</html>
